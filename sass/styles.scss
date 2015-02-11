@@ -94,6 +94,7 @@ article h2{
 article{
 
   margin:0 0 3em 0;
+  max-height:35em;
   
 }
 
@@ -126,21 +127,22 @@ h3{
   text-align:center;
   border-top: $lightblue 1px solid;
 
+
 }
 .footer_links li {
   
-  left:30%;
+  margin:0 2em 0 0;
   display:inline;
   
 }
-.right{
-
-  margin:3em 0 0 0;
+footer{
+  position:relative;
+  margin:1em 0 3em 0;
 }
 .footer_links li a{
   text-decoration: none;
   color: $black_color;
-  margin:0 0.5em;
+  
 }
 
 
@@ -150,9 +152,63 @@ h3{
 }
 
 
-// @media #{$medium-only}{}
+ @media #{$medium-only}{
 
-// @media #{$large-only}{}
+  body{
+
+    margin: 1em 0 0 2em;
+  }
+  .row{
+
+    border-bottom: 1px solid $lightblue;
+    padding: 1em 0 0 0;
+   
+  }
+  .row .nav {
+
+    margin:0 6em 1em 12em;
+    
+  }
+  
+  .row .nav li {
+
+    display:inline;
+
+  }
+  .row .nav li a{
+    text-decoration: none;
+    color: $black_color;
+    margin:0 1em 0 0;
+    
+  }
+  h1{
+
+     margin: 0 6em 1em 6em;
+     font-size: 1.2em;
+     color: $lightblue;
+     letter-spacing: 2px;
+
+  }
+  article h2 a{
+
+    font-size:2em;
+    text-decoration:none;
+    color: $black_color;
+  }
+  h3 > a {
+  text-decoration: none;
+  border-bottom: $dotted_underline;
+  color: $black_color;
+  }
+  h3{
+
+    color:$lightblue;
+  }
+  
+
+ }
+
+
 
 
 
