@@ -1,0 +1,158 @@
+@import "./partials/reset.scss";
+@import "./partials/settings.scss";
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
+
+$white-color : #FCFFFF;
+$lightblue : #40E4ED;
+$black_color: #040C0D;
+
+$dotted_underline: 2px $lightblue dotted;
+//$inferno : Viral Inferno;
+
+
+body {
+  background: $white-color;
+  // font-family: Droid Serif,400;
+  // @media #{$small-only}{
+  //   background:red;
+ 
+  // }
+} 
+
+ 
+@media #{$large-only}{
+
+.row .nav {
+
+  padding:1em 0em 1em 14em;
+  border-bottom: 1px solid $lightblue;
+
+
+}
+.row h1{
+
+font-size:6em;
+  
+}
+
+.row .nav li a{
+
+  text-decoration: none;
+}
+
+.row .nav li{
+
+  display:inline;
+  margin:0 0.5em 0 0;
+  background:$lightblue;
+  color: #FCFFFF;
+  
+}
+
+.row{
+
+
+}
+
+
+
+.right ul li{
+  
+  display:inline;
+}
+
+
+}
+//======================================= small only
+@media #{$small-only}{
+
+body{
+
+  margin: 0 2em 0 2em;
+  font-family: Droid Serif,400;
+}
+.row .nav li{
+
+  display:inline;
+  margin:0 0.5em 0 0;
+  background:$lightblue;
+  color: #FCFFFF;
+}
+
+article h2 a{
+
+  text-decoration: none;
+  border-bottom:$dotted_underline;
+  color:black;
+  font-size:2em;
+
+}
+article h2{
+
+  margin:2em 0 0 0;
+}
+article{
+
+  margin:0 0 3em 0;
+  
+}
+
+.row .nav, aside, .left {
+
+  
+  display:none;
+}
+.row h1{
+
+  background: $lightblue;
+  text-align:center;
+}
+
+h3 > a {
+  text-decoration: none;
+  border-bottom: $dotted_underline;
+  color: $black_color;
+  }
+h3{
+
+  color:$lightblue;
+  margin: 0.4em 0 2em 0;
+}
+
+  
+.footer_links {
+  //position:relative;
+  padding: 3em 0 0 0;
+  text-align:center;
+  border-top: $lightblue 1px solid;
+
+}
+.footer_links li {
+  
+  left:30%;
+  display:inline;
+  
+}
+.right{
+
+  margin:3em 0 0 0;
+}
+.footer_links li a{
+  text-decoration: none;
+  color: $black_color;
+  margin:0 0.5em;
+}
+
+
+
+
+
+}
+
+
+// @media #{$medium-only}{}
+
+// @media #{$large-only}{}
+
+
+
