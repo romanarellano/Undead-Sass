@@ -3,7 +3,7 @@
 @import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
 
 $white-color : #FCFFFF;
-$lightblue : #40E4ED;
+$lightblue : #5FA5DE;
 $black_color: #040C0D;
 
 $dotted_underline: 2px $lightblue dotted;
@@ -214,12 +214,14 @@ footer{
   h2{
 
     margin: 0 1em 0 1em;
+
   }
   article h2 a{
 
     font-size:2em;
     text-decoration:none;
     color: $black_color;
+    border-bottom:1px dashed $lightblue;
     margin: 1em 1em 0 0;
 
   }
@@ -240,7 +242,7 @@ footer{
   h3{
     
     color:$lightblue;
-    margin: 0 1em 2em 1em;
+    margin: 1em 1em 2em 1em;
   }
   h4{
     color:$lightblue;
