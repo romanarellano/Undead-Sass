@@ -94,7 +94,7 @@ article h2{
 article{
 
   margin:0 0 3em 0;
-  max-height:35em;
+ 
   
 }
 
@@ -156,55 +156,123 @@ footer{
 
   body{
 
-    margin: 1em 0 0 2em;
-  }
-  .row{
-
-    border-bottom: 1px solid $lightblue;
-    padding: 1em 0 0 0;
-   
-  }
-  .row .nav {
-
-    margin:0 6em 1em 12em;
     
   }
+  .row {
+
+    
+    padding: 1em 0 1em 0;
+    
   
-  .row .nav li {
+    .nav {
 
-    display:inline;
-
-  }
-  .row .nav li a{
-    text-decoration: none;
-    color: $black_color;
-    margin:0 1em 0 0;
+    padding:1em 0 0.5em 0;
+    text-align:center;
     
+      li {
+
+        display:inline;
+
+        a {
+          text-decoration: none;
+          color: $black_color;
+          margin:0 1em 0 0;
+    
+        }
+      }
+    }
   }
   h1{
 
-     margin: 0 6em 1em 6em;
+     // margin: 0 6em 1em 6em;
+     text-align:center;
      font-size: 1.2em;
      color: $lightblue;
      letter-spacing: 2px;
+     padding: 1em 0 1em 0;
+     border-top: 1px solid $lightblue;
+    border-bottom: 1px solid $lightblue;
 
+  }
+  h2{
+
+    margin: 0 1em 0 1em;
   }
   article h2 a{
 
     font-size:2em;
     text-decoration:none;
     color: $black_color;
+    margin: 1em 1em 0 0;
+
+  }
+
+  
+    margin: 0 1em 0 1em;
+  
+  article{
+     margin: 0 0 3em 0;
+
   }
   h3 > a {
   text-decoration: none;
   border-bottom: $dotted_underline;
   color: $black_color;
+
   }
   h3{
-
+    
     color:$lightblue;
+    margin: 0 1em 2em 1em;
   }
-  
+  h4{
+    color:$lightblue;
+    font-size:20px;
+    margin:0 0 0.4em 0;
+    padding-top:2em;
+  }
+  aside{
+
+    margin:1.9em 1em 3em 1em;
+  }
+  article p{
+
+    margin: 0 1em 0 1em;
+  }
+  .read_more{
+    display:block;
+    margin-top:1.9em;
+    padding: 2em 0;
+    background:$lightblue;
+    color: $white-color;
+    text-align:center;
+    
+  }
+  .footer_links li{
+
+    display:inline;
+    margin: 0 0.4em;
+
+  }
+  .footer_links a{
+
+    text-decoration: none;
+    color:$black_color;
+  }
+  .footer_links{
+     text-align:center;
+     margin-bottom:2em;
+     padding: 1.5em 0 0 0;
+     border-top: $lightblue 1px solid;
+  }
+
+
+  .left{
+
+    display:none;
+  }
+
+
 
  }
 
