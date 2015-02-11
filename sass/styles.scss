@@ -302,15 +302,18 @@ footer{
 
 body{
 
-  margin: 0 2em 0 2em;
+  margin: 0 0 0 0;
   font-family: Droid Serif,400;
 }
 .row .nav li{
 
   display:inline;
-  margin:0 0.5em 0 0;
+  margin:0 0em 0 0;
   background:$lightblue;
   color: #FCFFFF;
+}
+.content{
+  margin: 0 2em 0 2em;
 }
 
  
@@ -339,9 +342,11 @@ article{
   display:none;
 }
 .row h1{
-
+  display:block;
   background: $lightblue;
   text-align:center;
+
+
 }
 
 h3 > a {
