@@ -10,29 +10,22 @@ $dotted_underline: 2px $lightblue dotted;
 //$inferno : Viral Inferno;
 
 
-body {
-  background: $white-color;
-  // font-family: Droid Serif,400;
-  // @media #{$small-only}{
-  //   background:red;
- 
-  // }
-} 
+
 
 //============================ large only
 @media #{$large-only}{
 
-  body{
-    display:block;
-    margin:2em 7em;
-    background:$lightblue;
+body{
+  display:block;
+  margin:2em 7em;
+  background:$lightblue;
 
-  }
-  .row{
+}
+.row{
 
-    background:$white-color;
-    
-  }
+  background:$white-color;
+  border-top: solid 2px $lightblue;
+}
 
 
 .row h1{
@@ -41,12 +34,13 @@ font-size:2em;
 color: $lightblue;
 padding:1em;
 text-align:center;
-border-bottom: 1px solid $lightblue;
+
   
 }
 .row .clearfix{
 
   float:left;
+
 }
 
 .row .nav {
@@ -102,15 +96,16 @@ h3{
 }
 .content{
 
-  margin:0 2em 0 0;
+  margin:0 2em 0 2em;
 }
 article {
   float:left;
-  margin:0 2em 0 2em;
+  margin:0 2 1em 3em 3em;
   padding: 1em 2em 2em 0;
   width:50%;
   border-right:solid 2px $lightblue;
-  border-bottom: solid 2px $lightblue;
+  
+
   
     h3{
 
@@ -121,12 +116,11 @@ article {
 }
 aside{
 
-  //margin: 4em 0 0 2em;
+  display:block;
   float:right;
-  margin:0 12em 0 0;
-  padding:3em 1.5em;
-  //line-height:3px;
-  width:18%;
+  margin:3.1em 10em 3em 1em;
+  width:16%;
+  
     h4{
       margin:0 0 0.5em 0;
       color:$lightblue;
@@ -135,6 +129,7 @@ aside{
       p{
 
         line-height:1.5em;
+        
       }
 
 }
@@ -145,12 +140,161 @@ aside{
 
   
 }
+.left {
 
+  display:block;
+  float:right;
+  margin: 1em 1em;
+
+  
+}
+.footer_links{
+
+  margin:1em 2em 0 4em;
+  padding-bottom:1em;
+      li a{
+
+      text-decoration: none;
+      color:$black_color;
+    }
+}
+footer{
+
+  padding:1em 0 0 0;
+}
 
 
 
 
 }
+
+//=============================== medium only
+ @media #{$medium-only}{
+
+  body{
+
+    
+  }
+  .row {
+
+    
+    padding: 1em 0 1em 0;
+    
+  
+    .nav {
+
+    padding:1em 0 0.5em 0;
+    text-align:center;
+    
+      li {
+
+        display:inline;
+
+        a {
+          text-decoration: none;
+          color: $black_color;
+          margin:0 1em 0 0;
+    
+        }
+      }
+    }
+  }
+  h1{
+
+     // margin: 0 6em 1em 6em;
+     text-align:center;
+     font-size: 1.2em;
+     color: $lightblue;
+     letter-spacing: 2px;
+     padding: 1em 0 1em 0;
+     border-top: 1px solid $lightblue;
+     border-bottom: 1px solid $lightblue;
+
+  }
+  h2{
+
+    margin: 0 1em 0 1em;
+  }
+  article h2 a{
+
+    font-size:2em;
+    text-decoration:none;
+    color: $black_color;
+    margin: 1em 1em 0 0;
+
+  }
+
+  
+    margin: 0 1em 0 1em;
+  
+  article{
+     margin: 0 0 3em 0;
+
+  }
+  h3 > a {
+  text-decoration: none;
+  border-bottom: $dotted_underline;
+  color: $black_color;
+
+  }
+  h3{
+    
+    color:$lightblue;
+    margin: 0 1em 2em 1em;
+  }
+  h4{
+    color:$lightblue;
+    font-size:20px;
+    margin:0 0 0.4em 0;
+    padding-top:2em;
+  }
+  aside{
+
+    margin:2.7em 1em 0.6em 1em;
+  }
+  article p{
+
+    margin: 0 1em 0 1em;
+  }
+  .read_more{
+    position:relative;
+    display:block;
+    margin:3em 0 1em 0;
+    padding: 2em 0;
+    background:$lightblue;
+    color: $white-color;
+    text-align:center;
+    
+  }
+  .footer_links li{
+
+    display:inline;
+    margin: 0 0.4em 4em 0;
+
+  }
+  .footer_links a{
+
+    text-decoration: none;
+    color:$black_color;
+  }
+  .footer_links{
+     text-align:center;
+     margin-bottom:2em;
+     padding: 1.5em 0 0 0;
+     border-top: $lightblue 1px solid;
+  }
+
+
+  .left{
+
+    display:none;
+  }
+
+
+
+ }
+
+
 //======================================= small only
 @media #{$small-only}{
 
@@ -238,131 +382,6 @@ footer{
 
 
 }
-
-//=============================== medium only
- @media #{$medium-only}{
-
-  body{
-
-    
-  }
-  .row {
-
-    
-    padding: 1em 0 1em 0;
-    
-  
-    .nav {
-
-    padding:1em 0 0.5em 0;
-    text-align:center;
-    
-      li {
-
-        display:inline;
-
-        a {
-          text-decoration: none;
-          color: $black_color;
-          margin:0 1em 0 0;
-    
-        }
-      }
-    }
-  }
-  h1{
-
-     // margin: 0 6em 1em 6em;
-     text-align:center;
-     font-size: 1.2em;
-     color: $lightblue;
-     letter-spacing: 2px;
-     padding: 1em 0 1em 0;
-     border-top: 1px solid $lightblue;
-    border-bottom: 1px solid $lightblue;
-
-  }
-  h2{
-
-    margin: 0 1em 0 1em;
-  }
-  article h2 a{
-
-    font-size:2em;
-    text-decoration:none;
-    color: $black_color;
-    margin: 1em 1em 0 0;
-
-  }
-
-  
-    margin: 0 1em 0 1em;
-  
-  article{
-     margin: 0 0 3em 0;
-
-  }
-  h3 > a {
-  text-decoration: none;
-  border-bottom: $dotted_underline;
-  color: $black_color;
-
-  }
-  h3{
-    
-    color:$lightblue;
-    margin: 0 1em 2em 1em;
-  }
-  h4{
-    color:$lightblue;
-    font-size:20px;
-    margin:0 0 0.4em 0;
-    padding-top:2em;
-  }
-  aside{
-
-    margin:1.9em 1em 3em 1em;
-  }
-  article p{
-
-    margin: 0 1em 0 1em;
-  }
-  .read_more{
-    display:block;
-    margin-top:1.9em;
-    padding: 2em 0;
-    background:$lightblue;
-    color: $white-color;
-    text-align:center;
-    
-  }
-  .footer_links li{
-
-    display:inline;
-    margin: 0 0.4em;
-
-  }
-  .footer_links a{
-
-    text-decoration: none;
-    color:$black_color;
-  }
-  .footer_links{
-     text-align:center;
-     margin-bottom:2em;
-     padding: 1.5em 0 0 0;
-     border-top: $lightblue 1px solid;
-  }
-
-
-  .left{
-
-    display:none;
-  }
-
-
-
- }
 
 
 
