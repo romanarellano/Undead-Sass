@@ -2,9 +2,10 @@
 @import "./partials/settings.scss";
 @import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
 
-$white-color : #FCFFFF;
-$lightblue : #5FA5DE;
-$black_color: #040C0D;
+$white-color : #EFF9EC;
+$lightblue : #57C1C7;
+$black_color: #14273D;
+$background-larger:#57C1C7;
 
 $dotted_underline: 2px $lightblue dotted;
 //$inferno : Viral Inferno;
@@ -18,22 +19,22 @@ $dotted_underline: 2px $lightblue dotted;
 body{
   display:block;
   margin:2em 7em;
-  background:$lightblue;
+  background:$background-larger;
 
 }
 .row{
 
   background:$white-color;
-  border-top: solid 2px $lightblue;
+  border-top: solid 1px $lightblue;
 }
 
 
 .row h1{
 
-font-size:2em;
-color: $lightblue;
-padding:1em;
-text-align:center;
+  font-size:1em;
+  color: $lightblue;
+  padding:1em;
+  text-align:center;
 
   
 }
@@ -46,7 +47,6 @@ text-align:center;
 .row .nav {
 
   padding:1em 1em;
-  border-bottom: 1px solid $lightblue;
   text-decoration: none;
   text-align:center;
 
@@ -281,8 +281,8 @@ footer{
   }
   .footer_links{
      text-align:center;
-     margin-bottom:2em;
-     padding: 1.5em 0 0 0;
+     //margin-bottom:1.4em;
+     padding: 1.8em 0 0 0;
      border-top: $lightblue 1px solid;
   }
 
@@ -345,6 +345,8 @@ article{
   display:block;
   background: $lightblue;
   text-align:center;
+  color:$white-color;
+  padding:0.5em 0;
 
 
 }
